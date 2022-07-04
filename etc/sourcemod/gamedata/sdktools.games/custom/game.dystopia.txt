@@ -1,0 +1,87 @@
+"Games"
+{
+	"#default"
+	{
+		"Addresses"
+		{
+			"g_pGameRules"
+			{
+				"linux"
+				{
+					"signature" "g_pGameRules"
+					"read" "0"
+				}
+			}
+			"gpGlobals"
+			{
+				"linux"
+				{
+					"signature" "gpGlobals"
+					"read" "0"
+				}
+			}
+			"RoundTimeLimit"
+			{
+				"linux"
+				{
+					"signature" "RoundTimeLimit"
+					"offset" "75"
+				}
+			}
+
+		}
+		"Signatures"
+		{
+			"g_pGameRules"
+			{
+				"library" "server"
+				"linux" "@g_pGameRules"
+			}
+			"gpGlobals"
+			{
+				"library" "server"
+				"linux" "@gpGlobals"
+			}
+			"RoundTimeLimit"
+			{
+				"library" "server"
+				"linux" "\x43\x55\x73\x65\x72\x43\x6d\x64"
+			}
+			"GetGlobalVars"
+			{
+				"library" "server"
+				"linux" "@_ZN18CPlayerInfoManager13GetGlobalVarsEv"
+			}
+			"FireOutput"
+			{
+				"library" "server"
+				"linux" "@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
+			}
+			"NotifyNetworkStateChanged"
+			{
+				"library" "server"
+				"linux" "@_ZN15CGameRulesProxy25NotifyNetworkStateChangedEv"
+			}
+			"GetRoundTimeLeft"
+			{
+				"library" "server"
+				"linux" "@_ZNK13CDYSGameRules16GetRoundTimeLeftEv"
+			}
+			"GetRoundTimeElapsed"
+			{
+				"library" "server"
+				"linux" "@_ZNK13CDYSGameRules19GetRoundTimeElapsedEv"
+			}
+			"PlayerRunCommand"
+			{
+				"library" "server"
+				"linux" "@_ZN11CBasePlayer16PlayerRunCommandEP8CUserCmdP11IMoveHelper"
+			}
+			"PlayerRunCmd"
+			{
+				"library" "server"
+				"linux" "@_ZN11CBasePlayer16PlayerRunCommandEP8CUserCmdP11IMoveHelper"
+			}
+		}
+	}
+}
